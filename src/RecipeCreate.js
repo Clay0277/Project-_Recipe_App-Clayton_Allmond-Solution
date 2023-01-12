@@ -21,6 +21,7 @@ function RecipeCreate({ handleChange, handleSubmit, formValue }) {
                 id="name"
                 name="name"
                 value={formValue.name}
+                required
                 onChange={handleChange}
                 placeholder="Name"
               ></input>
@@ -31,6 +32,7 @@ function RecipeCreate({ handleChange, handleSubmit, formValue }) {
                 id="cuisine"
                 name="cuisine"
                 value={formValue.cuisine}
+                required
                 onChange={handleChange}
                 placeholder="Cuisine"
               ></input>
@@ -41,6 +43,7 @@ function RecipeCreate({ handleChange, handleSubmit, formValue }) {
                 id="url"
                 name="photo"
                 value={formValue.photo}
+                required
                 onChange={handleChange}
                 placeholder="URL"
               ></input>
@@ -52,6 +55,7 @@ function RecipeCreate({ handleChange, handleSubmit, formValue }) {
                 rows="2"
                 cols="20"
                 value={formValue.ingredients}
+                required
                 onChange={handleChange}
               ></textarea>
             </td>
@@ -62,6 +66,7 @@ function RecipeCreate({ handleChange, handleSubmit, formValue }) {
                 rows="2"
                 cols="20"
                 value={formValue.preparation}
+                required
                 onChange={handleChange}
               ></textarea>
             </td>
